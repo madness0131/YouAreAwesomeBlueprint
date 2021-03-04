@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <style>
+
+    html{
+    font-weight : bold;
+    font-family : Times New Roman;
+    }
+
+
+    div{
+      margin: 1px;
+    }
+
+    label{
+      width: 200px;
+      display: inline-block;
+    }
+    
+    #Header1{
+      font-size: 25px;
+      font-weight : bold;
+    }
+
+    #HeaderLabel{
+      margin: 15px;
+    }
+
+   </style>
+  </head>
+
+  <body>
+
+    <form>
+      <script src="script.js"></script>
+      <header ID= "Header1">Create An Account</header>
+      <div ID= HeaderLabel></div>
+
+      <label ID= "FirstName" for="FirstName_Input">First Name</label>
+      <input type= "text" ID= "FirstName_Input" required>
+      <div></div>
+
+      <label ID= "LastName" for="LastName_Input">Last Name</label>
+      <input type= "text" ID= "LastName_Input" required>
+      <div></div>
+
+
+      <label ID= "Email" for="Email_Input">Email</label>
+      <input type= "email"" ID= "Email_Input" required>
+      <div></div>
+
+      <label ID= "UserName" for="UserName_Input">Username</label>
+      <input type= "text" ID= "UserName_Input" required>
+      <div></div>
+
+      <label ID= "Password" for="Password_Input" >Password</label>
+      <input type= "password" ID= "Password_Input" minlength="10" required>
+      <div></div>
+
+      <label ID= "BirthDate" for="BirthDate_Input">Birth Date</label>
+      <input type= "date" ID= "BirthDate_Input" required>
+      <div></div>
+
+      <label ID= "Happiness" for="Happiness_Input">How Happy are you?</label>
+      <input type= "range" ID= "Happiness_Input" min="0" max="100" step="10" list="steplist" required>
+      <datalist id="steplist">
+        <option>0</option>
+        <option>20</option>
+        <option>40</option>
+        <option>60</option>
+        <option>80</option>
+        <option>100</option>
+      </datalist>
+      <div></div>
+
+      <label ID= "FavoriteColor" for="FavoriteColor_Input">What is your fav. color?</label>
+      <input type= "color" ID= "FavoriteColor_Input" required>
+      <div></div>
+
+      <input type= "submit" value="Create Account">
+      <div></div>
+    </form>
+  </body>
+</html>
